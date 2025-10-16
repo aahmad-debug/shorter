@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortly | URL Shortening</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <script src="java.js" defer></script>
+</head>
+<body>
+    <header class="navbar container">
+        <h2 class="logo">Shortly</h2>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+        </nav>
+        <div class="login-actions">
+            <a href="#" class="btn-login">Login</a>
+            <a href="#" class="btn-signup">Sign Up</a>
+        </div>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">
+            <span class="sr-only"></span>
+            <div class="hamburger"></div>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-image">
+                <img src="url-shortening-api-master/images/illustration-working.svg" alt="A person working at a desk on a computer, symbolizing productivity.">
+            </div>
+            <div class="hero-content">
+                <h1>More than just shorter links</h1>
+                <p>Build your brand's recognition and get detailed insights on how your links are performing.</p>
+                <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+        </section>
+
+        <section class="shorten-link-section">
+            <div class="shorten-form container">
+                <div class="input-group">
+                    <input type="text" id="url-input" placeholder="Shorten a link here...">
+                    <p class="error-message hidden">Please add a link</p>
+                </div>
+                <button id="shorten-btn" class="btn btn-primary">Shorten It!</button>
+            </div>
+            <div id="results-container" class="results-container container"></div>
+        </section>
+
+        <section class="stats-section">
+            <div class="stats-header container">
+                <h2>Advanced Statistics</h2>
+                <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
+            </div>
+            <div class="features-grid container">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="url-shortening-api-master/images/icon-brand-recognition.svg" alt="A line graph icon representing brand recognition.">
+                    </div>
+                    <h3>Brand Recognition</h3>
+                    <p>Boost your brand recognition with each click. Branded links help instill confidence in your content.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="url-shortening-api-master/images/icon-detailed-records.svg" alt="A tachometer icon representing detailed records.">
+                    </div>
+                    <h3>Detailed Records</h3>
+                    <p>Gain insights into who is clicking your links. Knowing when and where people engage helps inform better decisions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="url-shortening-api-master/images/icon-fully-customizable.svg" alt="A paintbrush and ruler icon representing customization.">
+                    </div>
+                    <h3>Fully Customizable</h3>
+                    <p>Improve brand awareness and content discoverability through customizable links.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="boost-section">
+            <div class="container">
+                <h2>Boost your links today</h2>
+                <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <h2 class="logo">Shortly</h2>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Features</h4>
+                    <ul>
+                        <li><a href="#">Link Shortening</a></li>
+                        <li><a href="#">Branded Links</a></li>
+                        <li><a href="#">Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Developers</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><img src="url-shortening-api-master/images/icon-facebook.svg" alt="Facebook icon"></a>
+                <a href="#" aria-label="Twitter"><img src="url-shortening-api-master/images/icon-twitter.svg" alt="Twitter icon"></a>
+                <a href="#" aria-label="Pinterest"><img src="url-shortening-api-master/images/icon-pinterest.svg" alt="Pinterest icon"></a>
+                <a href="#" aria-label="Instagram"><img src="url-shortening-api-master/images/icon-instagram.svg" alt="Instagram icon"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
